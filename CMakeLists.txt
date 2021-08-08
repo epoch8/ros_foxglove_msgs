@@ -6,9 +6,11 @@ find_package(catkin REQUIRED COMPONENTS geometry_msgs message_generation std_msg
 add_message_files(
   DIRECTORY msg
   FILES
+  ImageMarker.msg
   ImageMarkerArray.msg
 )
 
 generate_messages(DEPENDENCIES geometry_msgs std_msgs visualization_msgs)
 
 catkin_package(CATKIN_DEPENDS geometry_msgs message_runtime std_msgs visualization_msgs)
+
